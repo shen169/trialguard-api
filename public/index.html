@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TrialGuard - Stop Free Trial Abuse</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+        .hero {
+            text-align: center;
+            color: white;
+            padding: 4rem 0;
+        }
+        .hero h1 {
+            font-size: 3.5rem;
+            margin-bottom: 1rem;
+            font-weight: 800;
+        }
+        .hero p {
+            font-size: 1.3rem;
+            opacity: 0.9;
+            max-width: 600px;
+            margin: 0 auto 2rem;
+        }
+        .cta-button {
+            display: inline-block;
+            background: #fff;
+            color: #667eea;
+            padding: 1rem 2.5rem;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1.1rem;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .cta-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+        }
+        .features {
+            background: white;
+            border-radius: 20px;
+            padding: 3rem;
+            margin: 2rem 0;
+        }
+        .features h2 {
+            text-align: center;
+            font-size: 2rem;
+            margin-bottom: 2rem;
+        }
+        .feature-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+        }
+        .feature {
+            padding: 1.5rem;
+            border-radius: 10px;
+            background: #f8f9fa;
+        }
+        .feature h3 {
+            color: #667eea;
+            margin-bottom: 0.5rem;
+        }
+        .pricing {
+            text-align: center;
+            padding: 3rem 0;
+        }
+        .pricing h2 {
+            color: white;
+            font-size: 2rem;
+            margin-bottom: 2rem;
+        }
+        .pricing-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 1.5rem;
+        }
+        .pricing-card {
+            background: white;
+            border-radius: 15px;
+            padding: 2rem;
+            text-align: center;
+        }
+        .pricing-card h3 {
+            color: #667eea;
+            font-size: 1.5rem;
+        }
+        .price {
+            font-size: 2.5rem;
+            font-weight: 800;
+            color: #333;
+            margin: 1rem 0;
+        }
+        .price span {
+            font-size: 1rem;
+            color: #666;
+        }
+        .footer {
+            text-align: center;
+            color: white;
+            padding: 2rem 0;
+            opacity: 0.8;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <section class="hero">
+            <h1>🛡️ TrialGuard</h1>
+            <p>Stop users from abusing your free trials with multiple accounts. Simple API, powerful protection.</p>
+            <a href="#pricing" class="cta-button">Start Free →</a>
+        </section>
+
+        <section class="features">
+            <h2>How It Works</h2>
+            <div class="feature-grid">
+                <div class="feature">
+                    <h3>🔍 Device Fingerprinting</h3>
+                    <p>Detect when the same device creates multiple accounts, even if they use different emails.</p>
+                </div>
+                <div class="feature">
+                    <h3>📧 Email Validation</h3>
+                    <p>Block temporary and disposable email addresses instantly.</p>
+                </div>
+                <div class="feature">
+                    <h3>🌐 IP Analysis</h3>
+                    <p>Detect suspicious IPs, proxies, and multiple accounts from the same location.</p>
+                </div>
+                <div class="feature">
+                    <h3>⚡ One-Line Integration</h3>
+                    <p>Simple REST API. Add protection to your signup flow in 5 minutes.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="pricing" id="pricing">
+            <h2>Simple Pricing</h2>
+            <div class="pricing-grid">
+                <div class="pricing-card">
+                    <h3>Free</h3>
+                    <div class="price">$0<span>/mo</span></div>
+                    <p>100 verifications</p>
+                    <p>Basic protection</p>
+                </div>
+                <div class="pricing-card">
+                    <h3>Starter</h3>
+                    <div class="price">$9<span>/mo</span></div>
+                    <p>1,000 verifications</p>
+                    <p>All features</p>
+                </div>
+                <div class="pricing-card">
+                    <h3>Growth</h3>
+                    <div class="price">$29<span>/mo</span></div>
+                    <p>5,000 verifications</p>
+                    <p>Priority support</p>
+                </div>
+            </div>
+        </section>
+
+        <footer class="footer">
+            <p>Built by indie hackers, for indie hackers.</p>
+        </footer>
+    </div>
+</body>
+</html>
